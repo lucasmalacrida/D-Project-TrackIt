@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components"
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
 	* {
@@ -23,13 +23,38 @@ const GlobalStyle = createGlobalStyle`
 		color: #FFFFFF;
 	}
 
-	a {
-		&:-webkit-any-link {
-			text-decoration: none;
-			color: white;
-			cursor: pointer;
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+	input {
+		box-sizing: border-box;
+		border: 1px solid #D4D4D4;
+		border-radius: 5px;
+		width: 310px;
+		height:45px;
+		margin: 0px auto 6px;
+
+		padding-left: 11px;
+		font-family: 'Lexend Deca', sans-serif;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 25px;
+
+		&::placeholder {
+			color: #DBDBDB;
 		}
 	}
-`
 
-export default GlobalStyle
+	button {
+        display: block;
+        margin: 0px auto;
+        border-radius: 5px;
+        background-color: #52B6FF;
+        color: white;
+		text-align: center;
+    }
+`;
+
+export default GlobalStyle;

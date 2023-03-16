@@ -2,10 +2,10 @@ import { useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import styled from "styled-components";
 
-import HomePage from "./pages/HomePage/HomePage";
-import RegisterPage from "./pages/RegisterPage/RegisterPage";
-import HabitsPage from "./pages/HabitsPage/HabitsPage";
+import LoginPage from "./pages/HomePage/LoginPage";
+import SignupPage from "./pages/HomePage/SignupPage";
 import TodayPage from "./pages/TodayPage/TodayPage";
+import HabitsPage from "./pages/HabitsPage/HabitsPage";
 import HistoryPage from "./pages/HistoryPage/HistoryPage";
 
 export default function App() {
@@ -13,10 +13,10 @@ export default function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/cadastro" element={<RegisterPage />} />
-          <Route path="/habitos" element={<HabitsPage />} />
+          <Route path="/" element={<LoginPage />} />
+          <Route path="/cadastro" element={<SignupPage />} />
           <Route path="/hoje" element={<TodayPage />} />
+          <Route path="/habitos" element={<HabitsPage />} />
           <Route path="/historico" element={<HistoryPage />} />
         </Routes>
       </BrowserRouter>

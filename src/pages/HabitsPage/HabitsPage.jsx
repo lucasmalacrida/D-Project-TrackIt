@@ -1,7 +1,7 @@
 // import {} from "./styled";
 
-export default function HabitsPage(){
+export default function HabitsPage() {
     return (
-
+        <></>
     )
 }
